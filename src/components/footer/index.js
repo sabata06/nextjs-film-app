@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
+import Link from "next/link";
+
+import styles from "./styles.module.css";
 
 export default function Footer() {
-  return (
-    <div>Footer</div>
-  )
+    return (
+        <footer className={styles.footer}>
+          Made with ❤️ by&nbsp;
+          <Link href="https://github.com/sabata06" target="_blank">
+            Mehmet Karaarslan
+          </Link>
+        </footer>
+      );
 }
